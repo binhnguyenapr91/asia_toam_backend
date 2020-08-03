@@ -14,13 +14,13 @@ public class TestAuthController {
 
     @GetMapping("/renter")
     @PreAuthorize("hasRole('RENTER') or hasRole('HOST') or hasRole('ADMIN')")
-    public String userAccess() {
+    public String renterAccess() {
         return "Renter Content.";
     }
 
     @GetMapping("/host")
     @PreAuthorize("hasRole('HOST')")
-    public String moderatorAccess() {
+    public String hostAccess() {
         return "Host Board.";
     }
 

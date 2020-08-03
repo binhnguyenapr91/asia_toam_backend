@@ -23,6 +23,9 @@ dependencies {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
     testImplementation 'org.springframework.security:spring-security-test'
+    // https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator
+    compile group: 'org.hibernate.validator', name: 'hibernate-validator', version: '6.1.5.Final'
+
 }
 
 test {

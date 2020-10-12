@@ -44,6 +44,13 @@ public class Account {
     public Account() {
     }
 
+    public Account(Long id, String username, String password, String email) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.email = email;
+    }
+
     public Long getId() {
         return id;
     }

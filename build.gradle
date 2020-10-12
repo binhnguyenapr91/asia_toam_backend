@@ -8,6 +8,7 @@ group = 'asia.toam'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
+
 repositories {
     mavenCentral()
 }
@@ -22,14 +23,13 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
-    testImplementation 'org.springframework.security:spring-security-test'
     // https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator
     compile group: 'org.hibernate.validator', name: 'hibernate-validator', version: '6.1.5.Final'
     // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
     compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
-
 }
 
 test {
     useJUnitPlatform()
 }
+
